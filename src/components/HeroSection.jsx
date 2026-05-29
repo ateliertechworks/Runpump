@@ -146,7 +146,7 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <motion.button
         onClick={scrollToProducts}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity"
+        className="absolute bottom-6 sm:bottom-8 w-full px-4 z-10 flex flex-col items-center justify-center gap-2 opacity-70 hover:opacity-100 transition-opacity"
         style={{ color: '#E7E1B1' }}
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
