@@ -101,6 +101,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between pt-6 gap-3" style={{ borderTop: '1px solid rgba(48,109,41,0.2)' }}>
           <p className="font-mono text-xs" style={{ color: '#E7E1B1', opacity: 0.4 }}>© {year} RAN Pump. All rights reserved.</p>
+          <p className="font-mono text-xs" style={{ color: '#E7E1B1', opacity: 0.4 }}>© {year} Akestro Technologies. All rights reserved.</p>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#306D29' }} />
             <span className="font-mono text-xs" style={{ color: '#E7E1B1', opacity: 0.4 }}>Made in India 🇮🇳</span>
