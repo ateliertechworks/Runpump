@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Inter+Tight:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 38 60% 97%;
+    --foreground: 30 15% 8%;
+    --card: 38 40% 93%;
+    --card-foreground: 30 15% 8%;
+    --popover: 38 40% 93%;
+    --popover-foreground: 30 15% 8%;
+    --primary: 117 43% 29%;
+    --primary-foreground: 38 60% 97%;
+    --secondary: 38 35% 88%;
+    --secondary-foreground: 30 15% 8%;
+    --muted: 38 30% 85%;
+    --muted-foreground: 30 10% 40%;
+    --accent: 117 43% 29%;
+    --accent-foreground: 38 60% 97%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 38 60% 97%;
+    --border: 38 25% 80%;
+    --input: 38 25% 80%;
+    --ring: 117 43% 29%;
+    --radius: 0.25rem;
+
+    /* Brand tokens */
+    --forest-green: #306D29;
+    --cream-light: #FBF5DD;
+    --cream-warm: #E7E1B1;
+    --ink-black: #0A0804;
+    --charcoal: #1a1108;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    background-color: #FBF5DD;
+    color: #0A0804;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter Tight', 'Inter', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .teal-glow {
+    box-shadow: 0 0 20px rgba(45, 212, 191, 0.3), 0 0 40px rgba(45, 212, 191, 0.1);
+  }
+
+  .teal-glow-text {
+    text-shadow: 0 0 20px rgba(45, 212, 191, 0.5);
+  }
+
+  .blueprint-line {
+    border-color: rgba(45, 212, 191, 0.08);
+  }
+
+  .card-ghost-border {
+    border: 1px solid rgba(48, 109, 41, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .card-ghost-border:hover {
+    border-color: rgba(48, 109, 41, 0.5);
+  }
+
+  .btn-primary {
+    @apply font-bold px-6 py-3 transition-all duration-200;
+    background: #306D29;
+    color: #FBF5DD;
+    min-height: 48px;
+    font-family: 'Inter Tight', sans-serif;
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-primary:hover {
+    background-color: #3d8a34;
+    transform: translateY(-1px);
+  }
+
+  .btn-primary:focus-visible {
+    outline: 2px solid #306D29;
+    outline-offset: 2px;
+  }
+
+  .btn-outline {
+    @apply font-bold px-6 py-3 transition-all duration-200 bg-transparent;
+    border: 1px solid #306D29;
+    color: #306D29;
+    min-height: 48px;
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-outline:hover {
+    background-color: rgba(48, 109, 41, 0.08);
+  }
+
+  .btn-outline:focus-visible {
+    outline: 2px solid #306D29;
+    outline-offset: 2px;
+  }
+
+  .section-line {
+    border-top: 1px solid rgba(45, 212, 191, 0.08);
+  }
+
+  .stat-number {
+    font-family: 'JetBrains Mono', monospace;
+    color: #306D29;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Parallax hero */
+.hero-parallax {
+  will-change: transform;
+}
+
+/* Loading screen */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: #0F172A;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FBF5DD;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #306D29;
+  border-radius: 2px;
+}
+
+/* Blueprint grid overlay */
+.blueprint-grid {
+  background-image: 
+    linear-gradient(rgba(48, 109, 41, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(48, 109, 41, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Star rating */
+.star-filled {
+  color: #2DD4BF;
+  filter: drop-shadow(0 0 4px rgba(45, 212, 191, 0.6));
+}
+
+.star-empty {
+  color: #334155;
+}
+
+/* Animated underline */
+.teal-underline {
+  position: relative;
+}
+
+.teal-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #2DD4BF;
+  border-radius: 2px;
+}
+
+/* Section heading accent */
+.section-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: #306D29;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Energy conduit line */
+.energy-conduit {
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #2DD4BF, transparent);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Glassmorphism navbar */
+.glass-nav {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(30, 41, 59, 0.92);
+  border-bottom: 1px solid rgba(45, 212, 191, 0.1);
+}
+
+/* WhatsApp button pulse */
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(45, 212, 191, 0); }
+}
+
+.wa-pulse {
+  animation: wa-pulse 2s ease-in-out infinite;
+}
+
+/* Counter animation */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Loading logo pulse */
+@keyframes logo-pulse {
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.logo-animate {
+  animation: logo-pulse 1.2s ease-out forwards;
+}
+
+@keyframes loading-bar {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.loading-bar-animate {
+  animation: loading-bar 2s ease-in-out forwards;
+}
+
+@keyframes fade-out-up {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Responsive video/image */
+.hero-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Mobile hamburger */
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #F8FAFC;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+/* Product modal overlay */
+.modal-overlay {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
