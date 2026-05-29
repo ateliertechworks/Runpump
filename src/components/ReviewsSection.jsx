@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, MapPin, CheckCircle, Send, ChevronLeft, ChevronRight } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
@@ -40,25 +40,65 @@ const SAMPLE_REVIEWS = [
 ];
 
 export default function ReviewsSection() {
-  const [reviews, setReviews] = useState(SAMPLE_REVIEWS);
+  const [reviews, setReviews] = useState([]);
   const [formData, setFormData] = useState({ name: '', rating: 0, review_text: '', product: '', location: '' });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [page, setPage] = useState(0);
   const PER_PAGE = 3;
 
+  // Load reviews from localStorage on mount
+  useEffect(() => {
+    const storedReviews = localStorage.getItem('customer_reviews');
+    if (storedReviews) {
+      try {
+        const parsedReviews = JSON.parse(storedReviews);
+        setReviews([...parsedReviews, ...SAMPLE_REVIEWS]);
+      } catch (error) {
+        console.error('Error loading reviews:', error);
+        setReviews(SAMPLE_REVIEWS);
+      }
+    } else {
+      setReviews(SAMPLE_REVIEWS);
+    }
+  }, []);
+
+  // Save reviews to localStorage whenever they change
+  useEffect(() => {
+    const userReviews = reviews.filter(r => !r.id.toString().startsWith('demo'));
+    if (userReviews.length > 0) {
+      localStorage.setItem('customer_reviews', JSON.stringify(userReviews));
+    }
+  }, [reviews]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.rating === 0 || !formData.name || !formData.review_text) return;
+    
     setSubmitting(true);
-    setReviews(prev => [{ ...formData, id: Date.now(), verified: false }, ...prev]);
+    
+    // Create new review with timestamp
+    const newReview = {
+      ...formData,
+      id: Date.now().toString(),
+      verified: false,
+      createdAt: new Date().toISOString()
+    };
+    
+    // Add to the beginning of the reviews list
+    setReviews(prev => [newReview, ...prev]);
+    
+    // Reset form and show success message
     setFormData({ name: '', rating: 0, review_text: '', product: '', location: '' });
     setSubmitted(true);
+    setPage(0); // Reset to first page to show new review
     setSubmitting(false);
+    
+    // Hide success message after 4 seconds
     setTimeout(() => setSubmitted(false), 4000);
   };
 
-  const avgRating = (reviews.reduce((a, r) => a + r.rating, 0) / reviews.length).toFixed(1);
+  const avgRating = reviews.length > 0 ? (reviews.reduce((a, r) => a + r.rating, 0) / reviews.length).toFixed(1) : 0;
   const totalPages = Math.ceil(reviews.length / PER_PAGE);
   const displayedReviews = reviews.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE);
 
