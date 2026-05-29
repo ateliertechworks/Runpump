@@ -1,0 +1,36 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Customer name"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Star rating 1-5"
+    },
+    "review_text": {
+      "type": "string",
+      "description": "Customer review text"
+    },
+    "product": {
+      "type": "string",
+      "description": "Product reviewed"
+    },
+    "location": {
+      "type": "string",
+      "description": "Customer location"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "Verified purchase"
+    }
+  },
+  "required": [
+    "name",
+    "rating",
+    "review_text"
+  ]
+}

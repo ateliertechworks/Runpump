@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, MapPin, CheckCircle, Send, ChevronLeft, ChevronRight } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
 import ScrollReveal from './ScrollReveal';
 
 function StarRating({ rating, interactive = false, onRate }) {
@@ -48,17 +47,10 @@ export default function ReviewsSection() {
   const [page, setPage] = useState(0);
   const PER_PAGE = 3;
 
-  useEffect(() => {
-    base44.entities.Review.list('-created_date', 50)
-      .then(data => { if (data.length > 0) setReviews([...SAMPLE_REVIEWS, ...data]); })
-      .catch(() => {});
-  }, []);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.rating === 0 || !formData.name || !formData.review_text) return;
     setSubmitting(true);
-    await base44.entities.Review.create(formData);
     setReviews(prev => [{ ...formData, id: Date.now(), verified: false }, ...prev]);
     setFormData({ name: '', rating: 0, review_text: '', product: '', location: '' });
     setSubmitted(true);
