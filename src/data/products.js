@@ -4,7 +4,7 @@ export const PRODUCTS = [
     name: "RAN Agri Monoblock",
     category: "Agricultural",
     tagline: "Backbone of Indian Farming",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    image: "https://img.sanishtech.com/u/18f7c3de65aa86b2c82081ebf85f4cb1.jpg",
     specs: {
       hp: 1,
       flowRate: 1200,
@@ -18,10 +18,10 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    name: "RAN Submersible V4",
+    name: "Single Phase Vertical Openwell Pump",
     category: "Submersible",
     tagline: "Deep Well Power",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    image: "https://img.sanishtech.com/u/7be86e5246f2c78e89c4770ed164cb2f.jpg",
     specs: {
       hp: 2,
       flowRate: 2000,
@@ -35,10 +35,10 @@ export const PRODUCTS = [
   },
   {
     id: 3,
-    name: "RAN Submersible V6",
+    name: "Borewell Submersible Pump",
     category: "Submersible",
     tagline: "Heavy Duty Deep Earth Power",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80",
+    image: "https://img.sanishtech.com/u/9b3d4beaef98aa8d5621f6221aa908a6.jpg",
     specs: {
       hp: 5,
       flowRate: 5000,
@@ -52,10 +52,10 @@ export const PRODUCTS = [
   },
   {
     id: 4,
-    name: "RAN Jet Pump",
+    name: "Single / Three Phase Centrifugal Monobloc Pump",
     category: "Surface",
     tagline: "Instant Pressure Power",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    image: "https://img.sanishtech.com/u/44c58d3a7a8d928c3d7c95c7ae71de79.jpg",
     specs: {
       hp: 0.5,
       flowRate: 800,
@@ -69,10 +69,10 @@ export const PRODUCTS = [
   },
   {
     id: 5,
-    name: "RAN Centrifugal Pro",
+    name: "Single Phase Self Priming Mini Monobloc",
     category: "Industrial",
     tagline: "Industrial Grade Flow",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    image: "https://img.sanishtech.com/u/9ab073efeee8ef28ce0a755641e30a2c.jpg",
     specs: {
       hp: 10,
       flowRate: 15000,
@@ -86,10 +86,10 @@ export const PRODUCTS = [
   },
   {
     id: 6,
-    name: "RAN Solar Pump 2HP",
+    name: "Single Stage Mini Monobloc",
     category: "Solar",
     tagline: "Sun-Powered Water Freedom",
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80",
+    image: "https://img.sanishtech.com/u/450301a10d50c376b289f04ff2cfc517.jpg",
     specs: {
       hp: 2,
       flowRate: 2500,
@@ -103,10 +103,10 @@ export const PRODUCTS = [
   },
   {
     id: 7,
-    name: "RAN Solar Pump 5HP",
+    name: "Self Priming Centrifugal Jet Pumpsets",
     category: "Solar",
     tagline: "Maximum Solar Output",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80",
+    image: "https://img.sanishtech.com/u/4d6aa47b503212d09fb0208ff8f292cc.jpg",
     specs: {
       hp: 5,
       flowRate: 6000,
@@ -120,10 +120,10 @@ export const PRODUCTS = [
   },
   {
     id: 8,
-    name: "RAN Openwell Pump",
+    name: "Centrifugal Monobloc Pump",
     category: "Agricultural",
     tagline: "Open Well Warrior",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    image: "https://img.sanishtech.com/u/b03eaddcfb9596dfd170ab084bedc8b5.jpg",
     specs: {
       hp: 3,
       flowRate: 4000,
@@ -140,7 +140,7 @@ export const PRODUCTS = [
     name: "RAN Pressure Booster",
     category: "Domestic",
     tagline: "Never Low Pressure Again",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    image: "https://img.sanishtech.com/u/d6ccb0044abb2f5e6ea75959ac73c935.jpg",
     specs: {
       hp: 0.5,
       flowRate: 600,
@@ -154,10 +154,10 @@ export const PRODUCTS = [
   },
   {
     id: 10,
-    name: "RAN Sewage Pump",
+    name: "Vertical Openwell Submersible Pump",
     category: "Industrial",
     tagline: "Tough on Wastewater",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80",
+    image: "https://img.sanishtech.com/u/215ba76302c0cc38c2dbf8fcc4dfcd95.jpg",
     specs: {
       hp: 7.5,
       flowRate: 12000,
@@ -171,10 +171,10 @@ export const PRODUCTS = [
   },
   {
     id: 11,
-    name: "RAN Fire Fighting Pump",
+    name: "Vertical Openwell Submersible Pump",
     category: "Specialty",
     tagline: "When Every Second Counts",
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80",
+    image: "https://img.sanishtech.com/u/bccffdc2123a78eeafeee5a27192b2a8.jpg",
     specs: {
       hp: 15,
       flowRate: 20000,
@@ -188,10 +188,10 @@ export const PRODUCTS = [
   },
   {
     id: 12,
-    name: "RAN Dewatering Pump",
+    name: "Control Panels",
     category: "Construction",
     tagline: "Keep Sites Dry",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    image: "https://img.sanishtech.com/u/740a94a9cf1628f3f64837389a744f5b.jpg",
     specs: {
       hp: 5,
       flowRate: 18000,
@@ -205,10 +205,10 @@ export const PRODUCTS = [
   },
   {
     id: 13,
-    name: "RAN Borewell Compressor",
+    name: "Stainless Steel Borewell Submersible Pump",
     category: "Submersible",
     tagline: "Deep Reach Reliability",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80",
+    image: "https://img.sanishtech.com/u/0f6f24522c1939ee0d2fe10e609bd02a.jpg",
     specs: {
       hp: 3,
       flowRate: 3500,
@@ -222,10 +222,44 @@ export const PRODUCTS = [
   },
   {
     id: 14,
-    name: "RAN Inline Pump",
+    name: "Vertical Monobloc Dewatering Submersible Pump",
     category: "Industrial",
     tagline: "Seamless Pipeline Integration",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    image: "https://img.sanishtech.com/u/11d657bb47c08ab2b210015e00ec90e8.jpg",
+    specs: {
+      hp: 7.5,
+      flowRate: 10000,
+      head: 50,
+      phase: "Three Phase",
+      rpm: 2900,
+      application: "HVAC & Process Plants"
+    },
+    features: ["Compact Inline Design", "High Efficiency Motor", "Easy Maintenance"],
+    badge: "Industrial"
+  },
+   {
+    id: 14,
+    name: "Dewatering pumps",
+    category: "Industrial",
+    tagline: "Seamless Pipeline Integration",
+    image: "https://img.sanishtech.com/u/ebacc0765900b0d566c0b29e27e5c120.jpg",
+    specs: {
+      hp: 7.5,
+      flowRate: 10000,
+      head: 50,
+      phase: "Three Phase",
+      rpm: 2900,
+      application: "HVAC & Process Plants"
+    },
+    features: ["Compact Inline Design", "High Efficiency Motor", "Easy Maintenance"],
+    badge: "Industrial"
+  },
+   {
+    id: 14,
+    name: "Sewage pumps",
+    category: "Industrial",
+    tagline: "Seamless Pipeline Integration",
+    image: "https://img.sanishtech.com/u/7cac27c72271b67b1d30ef3cdb42940b.jpg",
     specs: {
       hp: 7.5,
       flowRate: 10000,
@@ -239,10 +273,10 @@ export const PRODUCTS = [
   },
   {
     id: 15,
-    name: "RAN Agri 5HP Monoblock",
+    name: "Three Phase Openwell Submersible Pump",
     category: "Agricultural",
     tagline: "Maximum Farm Performance",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80",
+    image: "https://img.sanishtech.com/u/815518a7bb43ce7efb0b6fd72a695c73.jpg",
     specs: {
       hp: 5,
       flowRate: 7500,
