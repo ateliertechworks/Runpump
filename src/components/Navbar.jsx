@@ -96,7 +96,7 @@ export default function Navbar() {
                 </button>
               ))}
               <a
-                href="tel:+918610619891"
+                href="tel:+919578621423"
                 className="flex items-center gap-2 text-sm font-bold px-5 py-2 rounded-sm transition-all duration-200"
                 style={{
                   background: '#306D29',
@@ -152,7 +152,7 @@ export default function Navbar() {
                 </motion.button>
               ))}
               <motion.a
-                href="tel:+918610619891"
+                href="tel:+919578621423"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}

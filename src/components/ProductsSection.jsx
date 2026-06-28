@@ -5,11 +5,7 @@ import ProductCard from './ProductCard';
 import ProductModal from './ProductModal';
 import ScrollReveal from './ScrollReveal';
 
-<<<<<<< HEAD
-const CATEGORIES = ['All', 'Agricultural', 'Submersible', 'Industrial', 'Solar', 'Domestic', 'Construction', 'Specialty'];
-=======
 const CATEGORIES = ['All', 'Self Priming Monobloc Pumps', 'Borewell Submersible Pumps', 'Dewatering & Sewage Pumps', 'Openwell Submersible Pumps', 'Pressure Boosting Pumps'];
->>>>>>> 3b14275 ( rework for the product info)
 
 export default function ProductsSection() {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -27,11 +23,7 @@ export default function ProductsSection() {
             The Engine Grid
           </h2>
           <p className="text-base max-w-xl mx-auto" style={{ color: '#5a4e38' }}>
-<<<<<<< HEAD
-            15 precision-engineered pump models for every application — from deep borewells to large-scale industrial systems.
-=======
             Precision-engineered pump models for every application — from deep borewells to large-scale industrial systems.
->>>>>>> 3b14275 ( rework for the product info)
           </p>
         </ScrollReveal>
 

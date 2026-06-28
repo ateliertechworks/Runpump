@@ -16,7 +16,7 @@
  */
 
 // ── Logo ──────────────────────────────────────────────────────
-import supportFactoryImg from './support_factory_img.png';
+import supportAgricultureImg from './support_agriculture_img.png';
 
 export const LOGO_URL =
   'https://media.base44.com/images/public/user_69e7851742160d5097ef0b9a/b4da21ebb_logo.png';
@@ -26,7 +26,7 @@ export const HERO_BG_URL =
   'https://media.base44.com/images/public/user_69e7851742160d5097ef0b9a/7a267b487_Gemini_Generated_Image_m86tkhm86tkhm86t1.png';
 
 // ── Contact Section (left panel background image, optional) ───
-export const CONTACT_PANEL_IMG_URL = supportFactoryImg;
+export const CONTACT_PANEL_IMG_URL = supportAgricultureImg;
 // ^ replace with your own factory / field photo
 
 // ── Products In Action Gallery ────────────────────────────────

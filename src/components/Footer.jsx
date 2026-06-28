@@ -65,7 +65,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm" style={{ color: '#E7E1B1', opacity: 0.7 }}>
                 <Phone size={14} className="mt-0.5 shrink-0" style={{ color: '#306D29' }} />
-                <a href="tel:+918610619891" className="hover:opacity-100 transition-opacity">+91 86106 19891</a>
+                <a href="tel:+919578621423" className="hover:opacity-100 transition-opacity">+91 95786 21423</a>
               </li>
               <li className="flex items-start gap-2 text-sm" style={{ color: '#E7E1B1', opacity: 0.7 }}>
                 <Mail size={14} className="mt-0.5 shrink-0" style={{ color: '#306D29' }} />

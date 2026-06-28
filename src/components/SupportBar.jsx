@@ -95,8 +95,7 @@ export default function SupportBar() {
                   </div>
                   <div>
                     <p className="font-bold text-sm mb-1" style={{ color: '#FBF5DD' }}>Call Now</p>
-                    <a href="tel:+918610619891" className="block text-sm" style={{ color: '#E7E1B1', opacity: 0.75 }}>+91 86106 19891</a>
-                    <a href="tel:+919626215925" className="block text-sm" style={{ color: '#E7E1B1', opacity: 0.75 }}>+91 96262 15925</a>
+                    <a href="tel:+919578621423" className="block text-sm" style={{ color: '#E7E1B1', opacity: 0.75 }}>+91 95786 21423</a>
                   </div>
                 </div>
 
