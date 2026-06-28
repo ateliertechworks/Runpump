@@ -3,6 +3,7 @@ import { Zap, Droplets, ArrowUpRight, ShoppingCart } from 'lucide-react';
 import { buildWhatsAppUrl } from '@/data/products';
 
 const categoryColors = {
+<<<<<<< HEAD
   Agricultural: { bg: 'rgba(48,109,41,0.12)', text: '#306D29', border: 'rgba(48,109,41,0.3)' },
   Submersible:  { bg: 'rgba(30,80,120,0.12)', text: '#3a7ab5', border: 'rgba(30,80,120,0.3)' },
   Industrial:   { bg: 'rgba(120,70,20,0.12)', text: '#a0651a', border: 'rgba(120,70,20,0.3)' },
@@ -10,6 +11,13 @@ const categoryColors = {
   Domestic:     { bg: 'rgba(90,40,120,0.12)', text: '#7a4a9e', border: 'rgba(90,40,120,0.3)' },
   Construction: { bg: 'rgba(140,40,20,0.12)', text: '#b03818', border: 'rgba(140,40,20,0.3)' },
   Specialty:    { bg: 'rgba(48,109,41,0.12)', text: '#306D29', border: 'rgba(48,109,41,0.3)' },
+=======
+  'Borewell Submersible Pumps': { bg: 'rgba(30,80,120,0.12)', text: '#3a7ab5', border: 'rgba(30,80,120,0.3)' },
+  'Dewatering & Sewage Pumps': { bg: 'rgba(120,70,20,0.12)', text: '#a0651a', border: 'rgba(120,70,20,0.3)' },
+  'Openwell Submersible Pumps': { bg: 'rgba(48,109,41,0.12)', text: '#306D29', border: 'rgba(48,109,41,0.3)' },
+  'Pressure Boosting Pumps': { bg: 'rgba(90,40,120,0.12)', text: '#7a4a9e', border: 'rgba(90,40,120,0.3)' },
+  'Self Priming Monobloc Pumps': { bg: 'rgba(150,120,0,0.12)', text: '#9a7c00', border: 'rgba(150,120,0,0.3)' },
+>>>>>>> 3b14275 ( rework for the product info)
 };
 
 export default function ProductCard({ product, onClick, index }) {
