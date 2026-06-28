@@ -1,10 +1,11 @@
+
 export const PRODUCTS = [
   {
     "id": 1,
     "name": "V4 Submersible Borewell Pumps",
     "category": "Borewell Submersible Pumps",
     "tagline": "High Efficiency Deep Well Submersible Pumps",
-    "image": "https://img.sanishtech.com/u/9b3d4beaef98aa8d5621f6221aa908a6.jpg",
+    "image": "https://files.catbox.moe/0y7fdk.jpg",
     "specs": {
       "hp": 7.5,
       "flowRate": 400,
@@ -41,7 +42,7 @@ export const PRODUCTS = [
     "name": "V6 Borewell Pumps",
     "category": "Borewell Submersible Pumps",
     "tagline": "Premium Design Borewell Submersibles",
-    "image": "https://img.sanishtech.com/u/0f6f24522c1939ee0d2fe10e609bd02a.jpg",
+    "image": "https://files.catbox.moe/v2l4tk.jpg",
     "specs": {
       "hp": 25,
       "flowRate": 1600,
@@ -78,7 +79,7 @@ export const PRODUCTS = [
     "name": "Dewatering Pumps",
     "category": "Dewatering & Sewage Pumps",
     "tagline": "Efficient Wastewater & Sump Drainage",
-    "image": "https://img.sanishtech.com/u/11d657bb47c08ab2b210015e00ec90e8.jpg",
+    "image": "https://files.catbox.moe/ydupkt.jpg",
     "specs": {
       "hp": 2,
       "flowRate": 400,
@@ -112,7 +113,7 @@ export const PRODUCTS = [
     "name": "Sewage Pumps",
     "category": "Dewatering & Sewage Pumps",
     "tagline": "High Flow Sewage and Drainage Systems",
-    "image": "https://img.sanishtech.com/u/7cac27c72271b67b1d30ef3cdb42940b.jpg",
+    "image": "https://files.catbox.moe/9384xd.jpg",
     "specs": {
       "hp": 2,
       "flowRate": 400,
@@ -146,7 +147,7 @@ export const PRODUCTS = [
     "name": "Openwell Submersible Pumps",
     "category": "Openwell Submersible Pumps",
     "tagline": "Compact Submersible Power for Domestic Needs",
-    "image": "https://img.sanishtech.com/u/7be86e5246f2c78e89c4770ed164cb2f.jpg",
+    "image": "https://files.catbox.moe/9yg873.jpg",
     "specs": {
       "hp": 2,
       "flowRate": 150,
@@ -179,7 +180,7 @@ export const PRODUCTS = [
     "name": "Horizontal Openwell Pumps",
     "category": "Openwell Submersible Pumps",
     "tagline": "High Yield Openwell Solutions",
-    "image": "https://img.sanishtech.com/u/815518a7bb43ce7efb0b6fd72a695c73.jpg",
+    "image": "https://files.catbox.moe/nw083f.jpg",
     "specs": {
       "hp": 10,
       "flowRate": 1800,
@@ -212,7 +213,7 @@ export const PRODUCTS = [
     "name": "Vertical Openwell Pumps",
     "category": "Openwell Submersible Pumps",
     "tagline": "Robust Vertical Submersibles for Irrigation",
-    "image": "https://img.sanishtech.com/u/215ba76302c0cc38c2dbf8fcc4dfcd95.jpg",
+    "image": "https://files.catbox.moe/yqk2ye.jpg",
     "specs": {
       "hp": 7.5,
       "flowRate": 1050,
@@ -246,7 +247,7 @@ export const PRODUCTS = [
     "name": "Centrifugal Monoblock Pumps",
     "category": "Openwell Submersible Pumps",
     "tagline": "Centrifugal Openwell Pumping Solutions",
-    "image": "https://img.sanishtech.com/u/18f7c3de65aa86b2c82081ebf85f4cb1.jpg",
+    "image": "https://files.catbox.moe/7dnjqb.jpg",
     "specs": {
       "hp": 15,
       "flowRate": 2500,
@@ -279,8 +280,9 @@ export const PRODUCTS = [
     "name": "Horizontal Multistage Pressure Booster Pump",
     "category": "Pressure Boosting Pumps",
     "tagline": "Consistent Water Pressure System",
-    "image": "https://img.sanishtech.com/u/d6ccb0044abb2f5e6ea75959ac73c935.jpg",
+    "image": "https://files.catbox.moe/k5s9gs.jpg",
     "specs": {
+
       "hp": 2,
       "flowRate": 140,
       "head": 50,
@@ -312,7 +314,8 @@ export const PRODUCTS = [
     "name": "Smart Pressure Booster Pump",
     "category": "Pressure Boosting Pumps",
     "tagline": "Smart and Compact Pressure Solutions",
-    "image": "https://img.sanishtech.com/u/44c58d3a7a8d928c3d7c95c7ae71de79.jpg",
+    "image": "https://files.catbox.moe/d348ha.jpg",
+
     "specs": {
       "hp": 1,
       "flowRate": 50,
@@ -342,7 +345,7 @@ export const PRODUCTS = [
     "name": "Smart Mini Monobloc Pump",
     "category": "Self Priming Monobloc Pumps",
     "tagline": "Compact and Efficient Suction Power",
-    "image": "https://img.sanishtech.com/u/9ab073efeee8ef28ce0a755641e30a2c.jpg",
+    "image": "https://files.catbox.moe/jhs6ha.jpg",
     "specs": {
       "hp": 1,
       "flowRate": 60,
@@ -377,7 +380,7 @@ export const PRODUCTS = [
     "name": "Smart Max Monobloc Pump",
     "category": "Self Priming Monobloc Pumps",
     "tagline": "Maximum Suction Power",
-    "image": "https://img.sanishtech.com/u/450301a10d50c376b289f04ff2cfc517.jpg",
+    "image": "https://files.catbox.moe/o8m3rz.jpg",
     "specs": {
       "hp": 1,
       "flowRate": 60,
@@ -412,7 +415,7 @@ export const PRODUCTS = [
     "name": "Slow Speed Super Suction Pump",
     "category": "Self Priming Monobloc Pumps",
     "tagline": "Deep Suction and Silent Operation",
-    "image": "https://img.sanishtech.com/u/b03eaddcfb9596dfd170ab084bedc8b5.jpg",
+    "image": "https://files.catbox.moe/xt21ri.jpg",
     "specs": {
       "hp": 1,
       "flowRate": 60,

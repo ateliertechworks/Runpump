@@ -23,7 +23,7 @@ export const LOGO_URL =
 
 // ── Hero Section ──────────────────────────────────────────────
 export const HERO_BG_URL =
-  'https://media.base44.com/images/public/user_69e7851742160d5097ef0b9a/7a267b487_Gemini_Generated_Image_m86tkhm86tkhm86t1.png';
+  'https://media.base44.com/images/public/user_69e7851742160d5097ef0b9a/7a267b487_Gemini_Generated_Image_m86tkhm86t1.png';
 
 // ── Contact Section (left panel background image, optional) ───
 export const CONTACT_PANEL_IMG_URL = supportAgricultureImg;
@@ -66,3 +66,4 @@ export const PRODUCT_IMAGES: Record<number, string> = {
   14: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80',
   15: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80',
 };
+
